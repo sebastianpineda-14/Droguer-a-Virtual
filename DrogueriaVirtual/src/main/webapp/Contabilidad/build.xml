@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="1.2 contabilidad" default="Crear contabilidad.war" >
+    <description> Genera el war del contabilidad </description>
+	<property name="base_contabilidad" location="C:\Users\jsema\eclipse-workspace\DrogueriaVirtual\src\main\webapp\Contabilidad"/>
+	<property name="destino_contabilidad" location="C:\Users\jsema\eclipse-workspace\DrogueriaVirtual\Orquestador\backContabilidad\contabilidad.war"/>
+    <target name="Crear contabilidad.war" description="crea el contabilidad.war">
+    	 <jar destfile="${destino_contabilidad}"  basedir= "${base_contabilidad}"/>    	 
+    </target>
+</project>

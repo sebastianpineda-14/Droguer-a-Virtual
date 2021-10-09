@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="1.4 consulta" default="Crear consulta.war" >
+    <description> Genera el war del consulta </description>
+    
+	<property name="base_consulta" location="C:\Users\jsema\eclipse-workspace\DrogueriaVirtual\src\main\webapp\Consulta"/>
+	<property name="destino_consulta" location="C:\Users\jsema\eclipse-workspace\DrogueriaVirtual\Orquestador\frontConsulta\consulta.war"/>
+    
+    <target name="Crear consulta.war" description="crea el consulta.war">
+    	 <jar destfile="${destino_consulta}"  basedir= "${base_consulta}"/>    	 
+    </target>
+</project>

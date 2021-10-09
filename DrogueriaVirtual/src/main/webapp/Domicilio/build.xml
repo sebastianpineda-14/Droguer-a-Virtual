@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="1.5 domicilio" default="Crear domicilio.war" >
+    <description> Genera el war del domicilio </description>
+    
+	<property name="base_domicilio" location="C:\Users\jsema\eclipse-workspace\DrogueriaVirtual\src\main\webapp\Domicilio"/>
+	<property name="destino_domicilio" location="C:\Users\jsema\eclipse-workspace\DrogueriaVirtual\Orquestador\frontDomicilio\domicilio.war"/>
+    
+    <target name="Crear domicilio.war" description="crea el domicilio.war">
+    	 <jar destfile="${destino_domicilio}"  basedir= "${base_domicilio}"/>    	 
+    </target>
+</project>

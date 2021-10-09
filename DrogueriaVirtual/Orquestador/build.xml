@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- =======================Orquestador-========================== -->
+<project default="Crear orquestador.war" name="1.6 Orquestador">
+<description> Genera el war del Orquestador </description>
+<!-- variables -->
+<property name="dir_api" location="C:\Users\jsema\eclipse-workspace\DrogueriaVirtual\Api"/>
+<property name="base_orquestador" location="C:\Users\jsema\eclipse-workspace\DrogueriaVirtual\Orquestador"/>
+<!-- orquestar -->
+<target name="Crear orquestador.war" description="crea el orquestador.war">
+<jar basedir="${base_orquestador}" destfile="orquestador.war">
+<fileset dir="${dir_api}"/>
+<manifest>
+<attribute name="Main-Class" value="orquestador.Orquestador"/>
+</manifest>
+</jar>
+</target>
+</project>
